@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+
+<body>
+
+    <div class="music-container">
+
+        <div class="music-body">
+            <div class="layer">
+                <div class="volume-slider">
+                    <span class="bar"></span>
+                    <input type="range" min="0.01" max="1" value="0.5" step="0.01" class="volumerange" />
+
+                </div>
+            </div>
+
+
+            <div class="top-icons">
+                <button class="volume btn" id="volumne">
+                    <i class="fas fa-volume-up" id="volumeicon"></i>
+                </button>
+
+                <button class="list btn" id="list">
+                    <i class="fas fa-list"></i></button>
+            </div>
+
+            <div class="music-img">
+                <img src="https://c.saavncdn.com/606/Aalas-Ka-Pedh-Hindi-2015-500x500.jpg" alt="song-images" id="img">
+            </div>
+
+            <div class="music-info">
+                <h2 id="title">Choo Lu</h2>
+            </div>
+
+
+            <audio src="" id="audio"></audio>
+            <div class="music-process">
+
+                <div class="progress-bar">
+                <span class="progress-line"></span>
+                <input type="range" min="0" max="100" value="0" class="progress" id="progress">
+            </div>
+
+
+
+
+            <div class="duration">
+                <span class="current-time">00:00</span>
+                <span class="duration-time">00:00</span>
+            </div>
+        </div>
+
+
+        <div class="music-controls">
+            <button class="repeat btn" id="repeat">
+                <i class="fas fa-redo-alt"></i>
+            </button>
+
+    <div class="main-controls">
+            <button class="prevbtn" id="prevbtn">
+                <i class="fas fa-backward"></i>
+            </button>
+
+            <button class="playpause" id="playpause">
+                <i id="playpause-btn" class="fas fa-play"></i>
+            </button>
+
+            <button class="nxtbtn" id="nextbtn">
+                <i class="fas fa-forward"></i>
+            </button>
+        </div>
+        <button class="like btn" id="songs-list">
+            <i id="likeicon" class="fas fa-heart"></i>
+        </button>
+    </div>
+
+    <div class="songs-list" id="songs-list">
+        <button class="list-close btn">
+            <i class="fas fa-times"></i>
+        </button>
+    </div>
+    
+    </div>
+</div>
+
+
+<script src="script.js"></script>
+
+
+
+
+
+</body>
+
+</html>
